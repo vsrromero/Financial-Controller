@@ -10,6 +10,14 @@ function Form ({handleAdd, transactionsList, setTransactionsList}) {
     const [amount, setAmount] = useState('');
     const [isExpense, setIsExpense] = useState(false);
 
+    const getDate = () => {
+        const today = new Date();
+        const dd = today.getDate();
+        const mm = today.getMonth();
+        const yyyy = today.getFullYear();
+        return `${dd}/${mm}/${yyyy}`;
+    }
+
     const handleSave = () => {
         if(!description || !amount) {
             alert('Inform description and value');
@@ -23,7 +31,8 @@ function Form ({handleAdd, transactionsList, setTransactionsList}) {
             id: uniqueId(),
             description: description,
             amount: amount,
-            expense: isExpense
+            expense: isExpense,
+            date: getDate()
         };
 
         handleAdd(transaction);

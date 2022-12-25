@@ -16,8 +16,9 @@ function Grid ({items, setItems}) {
         <table>
             <thead>
                 <tr>
-                    <th style={{width: '40%'}}>Description</th>
-                    <th style={{width: '40%'}}>Value</th>
+                    <th style={{width: '30%'}}>Description</th>
+                    <th style={{width: '30%'}}>Value</th>
+                    <th style={{width: '20%'}}>Date</th>
                     <th style={{width: '10%'}}>Type</th>
                     <th style={{width: '10%'}}></th>
                 </tr>

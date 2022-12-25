@@ -9,6 +9,7 @@ function GridItem ({item, onDelete}) {
         <tr>
             <td className='alignStart'>{item.description}</td>
             <td>{item.amount}</td>
+            <td>{item.date}</td>
             <td>
                 {item.expense ? (
                     <FaRegArrowAltCircleDown color='#f00' />
