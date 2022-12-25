@@ -10,13 +10,13 @@ import { //import icons arrow up, arrow down and $ sign from react-icons
 
 import './summary.sass';
 
-function Summary () {
+function Summary (props) {
 
     return (
         <div id='cards'>
-            <SummaryItem title='In' icon={FaRegArrowAltCircleUp()} totalValue={1000} />
-            <SummaryItem title='Out' icon={FaRegArrowAltCircleDown()} totalValue={1000} />
-            <SummaryItem title='Total' icon={FaDollarSign()} totalValue={1000} />
+            <SummaryItem title='Incoming' icon={FaRegArrowAltCircleUp()} totalValue={props.income} />
+            <SummaryItem title='Outgoing' icon={FaRegArrowAltCircleDown()} totalValue={props.expense} />
+            <SummaryItem title='Total' icon={FaDollarSign()} totalValue={props.total} />
         </div>
     )
 }
