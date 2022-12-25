@@ -14,7 +14,7 @@ function Form ({handleAdd, transactionsList, setTransactionsList}) {
         const today = new Date();
         const dd = today.getDate();
         const mm = today.getMonth();
-        const yyyy = today.getFullYear();
+        const yyyy = today.getFullYear().toString().slice(-2);
         return `${dd}/${mm}/${yyyy}`;
     }
 
