@@ -32,6 +32,7 @@ function Form ({handleAdd, transactionsList, setTransactionsList}) {
         handleAdd(transaction);
         setDescription('');
         setAmount('');
+        setDate('');
     }
 
 
