@@ -1,7 +1,7 @@
 # React in out Finance Controller - [App link](https://resonant-beijinho-c7917e.netlify.app/)
 
 
-**This is a simple useful control app that allows you to control your incoming and outcoming**
+**This is a simple useful app that allows you to control your incomings and outcomings**
 
 * Packages and dependencies
     - react useState - useEffect
@@ -28,7 +28,9 @@ Mobile phone (iPhone 13 Pro Max)
 
 Mobile phone (iPhone 13 Pro Max)  
 <img src='./appPictures/mobile2.jpg' width='40%'>  
-
+  
+**Object saved**  
+  
 transactions = [  
 {  
 amount: "4500",  
